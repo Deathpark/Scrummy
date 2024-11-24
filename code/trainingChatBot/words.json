@@ -61,6 +61,18 @@
         "context": [""]
       },
       {
+        "tag": "scrum_integration",
+        "patterns": ["o scrum pode ser utilizado com outras metodologias", "integrações do scrum"],
+        "responses": ["O scrum pode ser utilizado em conjunto com outras metodologias ágeis. Como o scrum é uma metodologia que pode ser alterada para os usos mais adequados de cada equipe. Como por exemplo, o scrum pode ser utilizado juntamente com o kanban, de forma a organizar melhor as tarefas a serem feitas e quais ainda estão em backlog"],
+        "context": [""]
+      },
+      {
+        "tag": "scrum_assigments",
+        "patterns": ["quais são os papéis do scrum", "quais são as funções no scrum", "quais papéis cada desenvolvedor pode ter no scrum", "papéis do scrum", "posições do scrum"],
+        "responses": ["Os principais papéis no scrum são: Scrum Master:"],
+        "context": [""]
+      },
+      {
         "tag": "anything_else",
         "patterns": [],
         "responses": ["Desculpa, não entendi o que você falou, tente novamente!"],

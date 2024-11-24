@@ -16,7 +16,7 @@ intents = json.loads(open('words.json').read())
 
 base = Tk()
 base.title("Scrummy")
-base.geometry("400x500") 
+base.geometry("600x700") 
 base.resizable(width=FALSE, height=FALSE)
 
 
@@ -36,7 +36,7 @@ def send():
         Chat.insert(END, f"Você: {msg}\n\n")
         Chat.config(foreground="#000000", font=("Arial", 12))
 
-        response = chatbot_response(msg)
+        response = chatbot_response(msg).encode('iso-8859-1').decode('utf-8')
         Chat.insert(END, f"Scrummy: {response}\n\n")
 
         Chat.config(state=DISABLED)
@@ -57,10 +57,10 @@ SendButton = Button(base, font=("Verdana", 10, 'bold'), text="Enviar", width="12
 EntryBox = Text(base, bd=0, bg="white", width="29", height="2", font="Arial")
 
 # Coloca todos os componentes na tela
-scrollbar.place(x=376, y=6, height=386)
-Chat.place(x=6, y=6, height=386, width=370)
-EntryBox.place(x=128, y=401, height=50, width=260)
-SendButton.place(x=6, y=401, height=50)
+scrollbar.place(x=576, y=6, height=586)
+Chat.place(x=6, y=6, height=586, width=570)
+EntryBox.place(x=128, y=601, height=75, width=460)
+SendButton.place(x=6, y=601, height=75)
 
 
 base.mainloop()
