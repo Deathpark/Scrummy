@@ -11,3 +11,11 @@ openai.ChatCompletion.create(
 ## System = system
 ## Assistant = chatgpt
 ## User = user
+
+# pip install pyaudio
+# pip install SpeechRecognition
+# pip install gTTS
+# pip install wikipedia
+# pip install pygame
+# pip install openai
+# pip install python-dotenv

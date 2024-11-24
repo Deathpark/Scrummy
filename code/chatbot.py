@@ -9,12 +9,12 @@ client = OpenAI(
 )
 
 def send_message(message, chatMessages = []):
-    chatMessages.append({
+    chatMessages.append(
         {
             "role": "user", 
             "content": message
         },
-    })
+    )
 
     response = client.chat.completions.create(
         model = "gpt-3.5-turbo",
