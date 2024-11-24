@@ -8,17 +8,28 @@ client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-def send_message(message):
+def send_message(message, chatMessages = []):
+    chatMessages.append({
+        {
+            "role": "user", 
+            "content": message
+        },
+    })
+
     response = client.chat.completions.create(
         model = "gpt-3.5-turbo",
-        messages = [
-            {
-                "role": "user", 
-                "content": message
-            },
-        ],
+        messages = chatMessages,
     )
 
     return response["choices"][0]["message"]
 
-print(send_message("Em que ano estamos?"))
+chatMessages = []
+while True:
+    userText = input("Escreva seu texto aqui (Digite sair para sair)")
+
+    if userText == "sair":
+        break
+    else:
+        response = send_message(userText, chatMessages)
+        chatMessages.append(response)
+        print("Scrummy: ", response['content'])
