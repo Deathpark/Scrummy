@@ -69,7 +69,7 @@
       {
         "tag": "scrum_assigments",
         "patterns": ["quais são os papéis do scrum", "quais são as funções no scrum", "quais papéis cada desenvolvedor pode ter no scrum", "papéis do scrum", "posições do scrum"],
-        "responses": ["Os principais papéis no scrum são: Scrum Master:"],
+        "responses": ["Os principais papéis no scrum são: \nScrum Master: \nResponsável por atuar como facilitador de realização das tarefas; \nResponsável por tentar remover impedimentos. \nProduct Owner: \nResponsável por analisar e priorizar o backlog; \nResponsável pela comunicação com os clientes/stakeholders \nDesenvolvedores: \nEquipe que irá desenvolver as tarefas escolhidas."],
         "context": [""]
       },
       {

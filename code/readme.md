@@ -46,6 +46,9 @@ Por último, e de extrema importância, usamos o Keras para a estrutura de apren
 # Como rodar o chatBot treinado?
 Para usar o chatbot treinado, inicialmente é necessário se certificar que a versão do python está entre 3.8 e 3.11, pois a biblioteca TenserFlow possui suporte somente para estas versões do python até o momento do desenvolvimento deste projeto.
 
+Caso o projeto esteja rodando em um ambiente Windows, é necessário ter um servidor Xming rodando.
+Para isso, basta baixar o XMing do site oficial e deixá-lo rodando
+
 Para verificar a versão do python, é necessário digitar o seguinte comando em seu cmd ou console do seu editor de código:
 ```
     python --version
@@ -63,3 +66,5 @@ Após o comando acima ser executado com sucesso, podemos iniciar o chatbot e com
 ```
     python chatbotInterface.py
 ```
+
+Com a nova janela aberta, é só usufruir do chatbot fazendo perguntas e recebendo a resposta por elas
