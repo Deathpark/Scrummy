@@ -15,23 +15,19 @@ model = load_model('model.h5')
 intents = json.loads(open('words.json').read())
 
 base = Tk()
-base.title("Chatbot")
+base.title("Scrummy")
 base.geometry("400x500") 
 base.resizable(width=FALSE, height=FALSE)
 
 
 def chatbot_response(msg):
-    """
-        Resposta do bot
-    """
+    # Resposta do bot
     ints = class_prediction(msg, model)
     res = get_response(ints, intents)
     return res
 
 def send():
-    """
-        Envia a mensagem
-    """
+    # Envia a mensagem
     msg = EntryBox.get("1.0", 'end-1c').strip()
     EntryBox.delete("0.0", END)
 
@@ -41,7 +37,7 @@ def send():
         Chat.config(foreground="#000000", font=("Arial", 12))
 
         response = chatbot_response(msg)
-        Chat.insert(END, f"Bot: {response}\n\n")
+        Chat.insert(END, f"Scrummy: {response}\n\n")
 
         Chat.config(state=DISABLED)
         Chat.yview(END)

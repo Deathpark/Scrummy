@@ -10,9 +10,7 @@ classes = pickle.load(open('classes.pkl', 'rb'))
 
 
 def clear_writing(writing):
-    """
-        Limpa todas as sentenças inseridas.
-    """
+    # Limpa todas as sentenças inseridas.
 
     #tokeniza todas as frases inseridas, lematiza cada uma delas e retorna
     sentence_words = nltk.word_tokenize(writing)
@@ -23,10 +21,9 @@ def clear_writing(writing):
 
 
 def bag_of_words(writing, words):
-    """
-        Pega as sentenças que são limpas e cria um pacote de palavras que são usadas 
-        para classes de previsão que são baseadas nos resultados que obtivemos treinando o modelo.
-    """
+    # Pega as sentenças que são limpas e cria um pacote de palavras que são usadas 
+    # para classes de previsão que são baseadas nos resultados que obtivemos treinando o modelo.
+
     # tokenize the pattern
     sentence_words = clear_writing(writing)
 
@@ -42,10 +39,8 @@ def bag_of_words(writing, words):
 
 
 def class_prediction(writing, model):
-    """
-      Faz a previsao do pacote de palavras, usamos como limite de erro 0.25 para evitarmos overfitting
-      e classificamos esses resultados por força da probabilidade.
-    """
+    #Faz a previsao do pacote de palavras, usamos como limite de erro 0.25 para evitarmos overfitting
+    #e classificamos esses resultados por força da probabilidade.
 
     # filtra as previsões abaixo de um limite 0.25
     prevision = bag_of_words(writing, words)
@@ -63,9 +58,8 @@ def class_prediction(writing, model):
 
 
 def get_response(intents, intents_json):
-    """
-        pega a lista gerada e verifica o arquivo json e produz a maior parte das respostas com a maior probabilidade.
-    """
+    # pega a lista gerada e verifica o arquivo json e produz a maior parte das respostas com a maior probabilidade.
+
     tag = intents[0]['intent']
     list_of_intents = intents_json['intents']
     for idx in list_of_intents:
