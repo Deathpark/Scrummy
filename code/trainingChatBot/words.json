@@ -1,0 +1,82 @@
+{
+    "intents": [
+      {
+        "tag": "welcome",
+        "patterns": ["oi", "bom dia", "boa tarde", "boa noite", "good morning", "hi", "hello", "olá"],
+        "responses": ["Olá, eu sou Scrummy, sua assistente em assuntos relacionados a Scrum, no que posso te ajudar?", "Oi, tudo bem? Posso te ajudar?"],
+        "context": [""]
+      },
+      {
+        "tag": "who_are_you",
+        "patterns": ["qual seu nome?", "quem é você?", "como você chama?", "nome?", "vc é quem"],
+        "responses": ["Eu sou uma assistente virtual criada por um grupo de estudantes da PUC-Minas, denominada de Scrummy."],
+        "context": [""]
+      },
+      {
+        "tag": "daily",
+        "patterns": ["o que é uma daily", "daily", "reunião diária"],
+        "responses": ["A daily é uma reunião diária que consiste em cada desenvolvedor apresentar rapidamente o que está fazendo, o que irá fazer no resto do dia e principais dificuldades para a resolução de sua tarefa. A daily possui em média 15 minutos de duração."],
+        "context": [""]
+      },
+      {
+        "tag": "sprint",
+        "patterns": ["o que é uma sprint", "sprint", "tarefas em determinado periodo"],
+        "responses": ["A sprint é o conjunto de tarefas que serão entregues dentro de um certo período de tempo, normalmente 15 dias."],
+        "context": [""]
+      },
+      {
+        "tag": "planning",
+        "patterns": ["o que é uma planning", "o que é uma reunião de planejamento", "planning", "planejamento", "reunião de planejamento"],
+        "responses": ["A planning é uma reunião de final ou começo de sprint que consiste em reunir todos os desenvolvedores e gerentes de produto para que seja planejado tudo que será feito na sprint a seguir. Nesta reunião, serão definidas as complexidades de cada tarefa e serão designadas ao desenvolvedor que irá realizá-la"],
+        "context": [""]
+      },
+      {
+        "tag": "review",
+        "patterns": ["o que é uma review", "o que é uma revisão de sprint", "review", "revisão", "reunião de revisar"],
+        "responses": ["A review é a reunião que ocorre no final ou começo de sprint com o intuito de analisar as tarefas entregues na sprint. Além disso, essa reunião tem o intuito de demonstrar o funcionamento das novas funcionalidades/funcionalidades que foram corrigidas para a equipe e possivelmente o cliente final"],
+        "context": [""]
+      },
+      {
+        "tag": "retro",
+        "patterns": ["o que é uma retro", "o que é uma retrospectiva de sprint", "retro", "retrospectiva", "reunião de retrospectiva"],
+        "responses": ["A retro é a reunião que ocorre no final ou começo de sprint com o intuito de analisar as tarefas entregues na sprint e verificar quais tarefas planejadas não foram entregues. Além disso, essa reunião tem o intuito de analisar o que ocorreu para que as tarefas planejadas não serem entregues e formas de mitigar o ocorrido"],
+        "context": [""]
+      },
+      {
+        "tag": "scrum",
+        "patterns": ["o que é o scrum", "scrum", "metodologia scrum"],
+        "responses": ["A metodologia Scrum é a metodologia que tem como base agilizar o processo de desenvolvimento de tarefas de forma a dar rápida vazão e valor para o cliente, de forma que o usuário final sempre receba uma nova atualização e possa usufruir dos benefícios por ela trazidos, seja esta alteração uma correção de um bug ou uma nova funcionalidade. Desta forma, o cliente não precisa esperar o sistema estar completamente desenvolvido para começar a utilizar o sistema"],
+        "context": [""]
+      },
+      {
+        "tag": "when_to_use_scrum",
+        "patterns": ["quando utilizar o scrum", "scrum, quando utilizar", "devo utilizar o scrum"],
+        "responses": ["O scrum pode ser utilizado quando o ambiente pode sofrer grandes mudanças recorrentemente e/ou ambientes onde os clientes necessitam de entregas contínuas.Desta forma, os clientes/stakeholders conseguem verificar o andamento de cada funcionalidade do que esté sendo produzido e apontar mudanças nos requisitos previamente levantados ou levantar novos requisitos."],
+        "context": [""]
+      },
+      {
+        "tag": "when_not_to_use_scrum",
+        "patterns": ["quando não utilizar o scrum", "scrum, quando não utilizar", "não devo utilizar o scrum"],
+        "responses": ["O scrum não deve ser utilizado em ambientes onde os requisitos são fixos e claros desde o início do projeto, em equipes onde os rituais do scrum se tornem prejudiciais - como em equipes muito pequenas - e em projetos de curta duração, onde os processos do scrum não terão tempo suficiente para fazer efeito de forma benéfica"],
+        "context": [""]
+      },
+      {
+        "tag": "scrum_integration",
+        "patterns": ["o scrum pode ser utilizado com outras metodologias", "integrações do scrum"],
+        "responses": ["O scrum pode ser utilizado em conjunto com outras metodologias ágeis. Como o scrum é uma metodologia que pode ser alterada para os usos mais adequados de cada equipe. Como por exemplo, o scrum pode ser utilizado juntamente com o kanban, de forma a organizar melhor as tarefas a serem feitas e quais ainda estão em backlog"],
+        "context": [""]
+      },
+      {
+        "tag": "scrum_assigments",
+        "patterns": ["quais são os papéis do scrum", "quais são as funções no scrum", "quais papéis cada desenvolvedor pode ter no scrum", "papéis do scrum", "posições do scrum"],
+        "responses": ["Os principais papéis no scrum são: \nScrum Master: \nResponsável por atuar como facilitador de realização das tarefas; \nResponsável por tentar remover impedimentos. \nProduct Owner: \nResponsável por analisar e priorizar o backlog; \nResponsável pela comunicação com os clientes/stakeholders \nDesenvolvedores: \nEquipe que irá desenvolver as tarefas escolhidas."],
+        "context": [""]
+      },
+      {
+        "tag": "anything_else",
+        "patterns": [],
+        "responses": ["Desculpa, não entendi o que você falou, tente novamente!"],
+        "context": [""]
+      }
+    ]
+  }

@@ -5,12 +5,6 @@
   reprodução de áudio (técnica TEXT-TO-SPEECH)
 '''
 
-# pip install pyaudio
-# pip install SpeechRecognition
-# pip install gTTS
-# pip install wikipedia
-# pip install pygame
-
 # import the libraries
 import speech_recognition as sr
 
