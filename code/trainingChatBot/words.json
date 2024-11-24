@@ -33,7 +33,31 @@
       {
         "tag": "review",
         "patterns": ["o que é uma review", "o que é uma revisão de sprint", "review", "revisão", "reunião de revisar"],
-        "responses": ["A review é a reunião que ocorre no final ou começo de sprint com o intuito de analisar as tarefas entregues na sprint e verificar quais tarefas planejadas não foram entregues. Além disso, essa reunião tem o intuito de demonstrar o funcionamento das novas funcionalidades/funcionalidades que foram corrigidas para a equipe e possivelmente o cliente final e também analisar com a equipe de desenvolvimento o que ocorreu para que as tarefas planejadas não serem entregues e formas de mitigar o ocorrido"],
+        "responses": ["A review é a reunião que ocorre no final ou começo de sprint com o intuito de analisar as tarefas entregues na sprint. Além disso, essa reunião tem o intuito de demonstrar o funcionamento das novas funcionalidades/funcionalidades que foram corrigidas para a equipe e possivelmente o cliente final"],
+        "context": [""]
+      },
+      {
+        "tag": "retro",
+        "patterns": ["o que é uma retro", "o que é uma retrospectiva de sprint", "retro", "retrospectiva", "reunião de retrospectiva"],
+        "responses": ["A retro é a reunião que ocorre no final ou começo de sprint com o intuito de analisar as tarefas entregues na sprint e verificar quais tarefas planejadas não foram entregues. Além disso, essa reunião tem o intuito de analisar o que ocorreu para que as tarefas planejadas não serem entregues e formas de mitigar o ocorrido"],
+        "context": [""]
+      },
+      {
+        "tag": "scrum",
+        "patterns": ["o que é o scrum", "scrum", "metodologia scrum"],
+        "responses": ["A metodologia Scrum é a metodologia que tem como base agilizar o processo de desenvolvimento de tarefas de forma a dar rápida vazão e valor para o cliente, de forma que o usuário final sempre receba uma nova atualização e possa usufruir dos benefícios por ela trazidos, seja esta alteração uma correção de um bug ou uma nova funcionalidade. Desta forma, o cliente não precisa esperar o sistema estar completamente desenvolvido para começar a utilizar o sistema"],
+        "context": [""]
+      },
+      {
+        "tag": "when_to_use_scrum",
+        "patterns": ["quando utilizar o scrum", "scrum, quando utilizar", "devo utilizar o scrum"],
+        "responses": ["O scrum pode ser utilizado quando o ambiente pode sofrer grandes mudanças recorrentemente e/ou ambientes onde os clientes necessitam de entregas contínuas.Desta forma, os clientes/stakeholders conseguem verificar o andamento de cada funcionalidade do que esté sendo produzido e apontar mudanças nos requisitos previamente levantados ou levantar novos requisitos."],
+        "context": [""]
+      },
+      {
+        "tag": "when_not_to_use_scrum",
+        "patterns": ["quando não utilizar o scrum", "scrum, quando não utilizar", "não devo utilizar o scrum"],
+        "responses": ["O scrum não deve ser utilizado em ambientes onde os requisitos são fixos e claros desde o início do projeto, em equipes onde os rituais do scrum se tornem prejudiciais - como em equipes muito pequenas - e em projetos de curta duração, onde os processos do scrum não terão tempo suficiente para fazer efeito de forma benéfica"],
         "context": [""]
       },
       {
