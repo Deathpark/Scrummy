@@ -49,14 +49,17 @@ def recordAudio():
 # gerar resposta de áudio com base no texto (text-to-speech)
 def chatbotResponse(text):
     try:
-        f = open('chatbot_response.mp3')
-        f.close()
-        os.remove('chatbot_response.mp3')
-    except PermissionError:
-        print('erro de permissão para apagar o arquivo')
+        # verifica se o mixer está inicializado antes de tentar parar ou descarregar
+        if mixer.get_init():
+            if mixer.music.get_busy():
+                mixer.music.stop()
+            mixer.quit()
 
-    except FileNotFoundError:
-        print("Arquivo não existe")
+        # remove o arquivo de áudio antigo, se existir
+        if os.path.exists('chatbot_response.mp3'):
+            os.remove('chatbot_response.mp3')
+    except PermissionError:
+        print('Erro de permissão para apagar o arquivo')
 
     print(text)
 
@@ -72,9 +75,8 @@ def chatbotResponse(text):
     myobj.save(audioName)
 
     # tocar o áudio convertido
-    # os.system('start chatbot_response.mp3')
     mixer.init()
-    mixer.music.load('chatbot_response.mp3')
+    mixer.music.load(audioName)
     mixer.music.play(fade_ms=200)
     return
 
